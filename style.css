@@ -1,37 +1,104 @@
+/* General */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
-    background-color: #f2f2f2;
+    background-color: #f0f0f0;
+    color: #333;
 }
 
+/* Header */
 header {
-    background-color: #111;
-    color: white;
-    padding: 30px;
+    background-color: #222;
+    color: #fff;
+    padding: 50px 20px;
     text-align: center;
 }
 
+header h1 {
+    margin: 0;
+    font-size: 2.8em;
+}
+
+header p {
+    margin-top: 10px;
+    font-size: 1.3em;
+}
+
+/* Logo */
+.logo {
+    width: 120px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+/* Secciones */
 section {
-    background-color: white;
-    margin: 20px;
-    padding: 20px;
-    border-radius: 8px;
+    margin: 20px auto;
+    padding: 25px;
+    border-radius: 15px;
+    max-width: 650px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
 }
 
-h1 {
-    margin-bottom: 5px;
+/* Colores por sección */
+.services { background-color: #fdf6e3; }  /* crema claro */
+.schedule { background-color: #e0f7fa; }  /* azul claro */
+.contact { background-color: #fff3e0; }   /* naranja claro */
+
+/* Títulos de sección */
+section h2 {
+    margin-top: 0;
+    color: #222;
 }
 
-h2 {
-    color: #111;
+/* Listas */
+ul {
+    list-style: none;
+    padding: 0;
 }
 
-p, li {
-    font-size: 16px;
+li {
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
 }
 
+.service-img {
+    width: 100%;
+    max-width: 250px;
+    border-radius: 10px;
+    margin-top: 5px;
+}
+
+/* Botón de WhatsApp */
+.whatsapp-btn {
+    display: inline-block;
+    background-color: #25D366;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.whatsapp-btn:hover {
+    background-color: #1ebe57;
+}
+
+/* Footer */
 footer {
     text-align: center;
-    padding: 15px;
+    padding: 20px;
     background-color: #ddd;
+    margin-top: 40px;
+    border-top: 2px solid #ccc;
+}
+
+/* Responsive para móviles */
+@media (max-width: 600px) {
+    header h1 { font-size: 2em; }
+    section { margin: 10px; padding: 15px; }
+    .service-img { max-width: 100%; }
+    .whatsapp-btn { padding: 10px 20px; }
 }
